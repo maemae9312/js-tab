@@ -7,20 +7,22 @@
     <title>js-tab</title>
 </head>
 <body>
-    <div class="tab">
+    <!-- jsで使うことをわかりやすくするために、js-xxxとid名をつける -->
+    <div class="tab" id="js-tab">
         <div class="tab-nav">
-            <a href="" class="tab-nav-item is-active">Tab-0</a>
-            <a href="" class="tab-nav-item">Tab-1</a>
-            <a href="" class="tab-nav-item">Tab-2</a>
+            <!-- 要素が複数あるときは、data属性を使う -->
+            <a href="" class="tab-nav-item is-active" data-nav="0">Tab-0</a>
+            <a href="" class="tab-nav-item" data-nav="1">Tab-1</a>
+            <a href="" class="tab-nav-item" data-nav="2">Tab-2</a>
         </div>
         <div class="tab-contants">
-            <div class="tab-contents-item">
+            <div class="tab-contents-item" data-content="0">
                 tab 0
             </div>
-            <div class="tab-contents-item">
+            <div class="tab-contents-item" data-content="1">
                 tab 1
             </div>
-            <div class="tab-contents-item">
+            <div class="tab-contents-item" data-content="2">
                 tab 2
             </div>
         </div>
